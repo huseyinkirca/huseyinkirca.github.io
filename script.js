@@ -12,6 +12,7 @@ const firebaseConfig = {
   const db = firebase.database();
   
   function send(){
+    alert(user);
     const timestamp = Date.now();
     var mssg = document.getElementById("chat-txt");
     var mssg1 = mssg.value;
