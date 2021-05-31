@@ -9,27 +9,6 @@ const firebaseConfig = {
 
   firebase.initializeApp(firebaseConfig);
   const db = firebase.database();
-
-
-
-
-function login(){
-  const isimler = {"krc":"28"}
-  var isim = document.getElementById("user");
-  var passwd = document.getElementById("passwd");
-  var user = isim.value ;
-  var passwd1 = passwd.value ;
-  console.log(user)
-  console.log(passwd1)
-  if (isimler[user] == passwd1) {
-      alert("oldu");
-      chat.style.display = "";
-      loginscreen.style.display = "none";
-  }else{
-      alert("Kullanıcı adı veya şifre yanlış");
-  }
-}
-  
   
   function send(){
     const timestamp = Date.now();
@@ -53,4 +32,20 @@ function login(){
   });
   
   //login page
+function login(){
+  const isimler = {"krc":"28"}
+  var isim = document.getElementById("user");
+  var passwd = document.getElementById("passwd");
+  var user = isim.value ;
+  var passwd1 = passwd.value ;
+  console.log(user)
+  console.log(passwd1)
+  if (isimler[user] == passwd1) {
+      alert("oldu");
+      chat.style.display = "";
+      loginscreen.style.display = "none";
+  }else{
+      alert("Kullanıcı adı veya şifre yanlış");
+  }
+}
 
