@@ -19,6 +19,7 @@ const firebaseConfig = {
       usr: user,
       msg: mssg1,
     });
+    alert("ooooo")
     chat.style.display = "";  
     loginscreen.style.display = "none";
 
