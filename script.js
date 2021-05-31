@@ -1,13 +1,14 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyApVd25nOOHOImk3ngM-GHwhXUBzic8nmc",
-    authDomain: "realtime-chat-96508.firebaseapp.com",
-    projectId: "realtime-chat-96508",
-    storageBucket: "realtime-chat-96508.appspot.com",
-    messagingSenderId: "84516305780",
-    appId: "1:84516305780:web:d9162e45cb943820990a21",
+    apiKey: "AIzaSyB5ZmV_FdCdEC9gtT-sCMoWZaaz6fEF0e8",
+    authDomain: "realtime-ec47a.firebaseapp.com",
+    projectId: "realtime-ec47a",
+    storageBucket: "realtime-ec47a.appspot.com",
+    messagingSenderId: "432980632220",
+    appId: "1:432980632220:web:f368fccd641349d182c359",
   };
 
   firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
   const db = firebase.database();
   
   function send(){
