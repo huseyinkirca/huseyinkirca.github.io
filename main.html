@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Chatterbox</title> 
+     <link rel="stylesheet" type="text/css" href="index.css" />  
+  </head>
+ <body>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+        <div id="logscreen" class="logscreen">
+          
+            <div class="outer-box">
+                <div class="login-box">
+                  <h4 class="login-text">Giriş</h4>
+                  <center>
+                  <input placeholder="Kullanıcı Adı" id="user">
+                  <input placeholder="Şifre" id="passwd">
+    
+                  <button id="btn-login" onclick="login()">Giriş Yap</button>
+                  </center>
+                </div>
+            </div>    
+        </div>
+        <div id="chatscreen" class="chatscreen">  
+           <div class="chat-box">
+                <div id="chat">     
+                    <div id="messages"></div>
+                          <form id="send-message">
+                            <input id="chat-txt" type="text" />
+                            <button id="chat-btn" type="submit">Submit</button>
+                          </form>      
+                   </div>  
+               </div>
+          </div>
+       </div>
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+
+    <script src="script.js"></script>   
+</body>
+</html>
