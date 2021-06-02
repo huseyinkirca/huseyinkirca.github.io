@@ -10,7 +10,7 @@ const firebaseConfig = {
   firebase.analytics();
   const db = firebase.database();
   //function $(id) { return document.getElementById(id); }
-  var user_list ={"kirca":"28","hasan":"hbb","egemen":"61","baran":"kolejli"};
+  var user_list ={"kirca":"28","hasan":"hbb","egemen":"61","baran":"kolejli","guest1":"8576","guest2":"3310"};
   var screen_1 = document.getElementById("logscreen");
   var screen_2 = document.getElementById("chatscreen");
   screen_2.style.display="none";
