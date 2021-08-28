@@ -1,11 +1,11 @@
-const firebaseConfig = {
-    apiKey: "AIzaSyB5ZmV_FdCdEC9gtT-sCMoWZaaz6fEF0e8",
-    authDomain: "realtime-ec47a.firebaseapp.com",
-    projectId: "realtime-ec47a",
-    storageBucket: "realtime-ec47a.appspot.com",
-    messagingSenderId: "432980632220",
-    appId: "1:432980632220:web:f368fccd641349d182c359",  
-  };
+var admin = require("firebase-admin");
+
+var serviceAccount = require("path/to/serviceAccountKey.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://realtime-ec47a-default-rtdb.firebaseio.com"
+});
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
   const db = firebase.database();
