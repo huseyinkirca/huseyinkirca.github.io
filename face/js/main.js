@@ -1,5 +1,5 @@
 const video = document.getElementById("video");
-let predictedAges = [];
+let predictedAges = []; 
 
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri("/models"),
