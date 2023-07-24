@@ -1,0 +1,10 @@
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  color: aliceblue;
+  font-size: 100px;
+  text-shadow: 1px 1px 75px rgb(234, 255, 0)
+}
+  
