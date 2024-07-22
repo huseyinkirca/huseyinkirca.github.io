@@ -7,6 +7,7 @@
     <div>
         <p id="Word">your text</p>
     </div>
+    <input name="searchTxt" type="text" maxlength="512" id="searchTxt" class="searchField"/>
     <py-script>
         from js import document, Element
         import time
@@ -15,7 +16,7 @@
     
         
 
-        my_string = """Rakip İHA'nın tespiti için makine öğrenmesi algoritması olan YOLOv5 seçilmiştir. YOLO modelinin eğitilmesi için farklı koşullarda uçan 7000 İHA'nın fotoğrafları toplanmıştır. Eğitilen model farklı ortamlarda test edilip test sonucuna göre veri setinde gerekli güncellemeler ve modelde optimizasyonlar yapılmıştır. Güncellemeler sonucu modelimiz daha doğru sonuçlar elde etmiştir."""
+        my_string = document.getElementById("searchTxt").value;
         word_list = my_string.split(" ")
         
 
