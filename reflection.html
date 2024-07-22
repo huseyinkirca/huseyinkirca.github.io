@@ -7,7 +7,7 @@
     <div>
         <p id="Word">your text</p>
     </div>
-    <input name="searchTxt" type="text" maxlength="512" id="searchTxt" class="searchField"/>
+    
     <py-script>
         from js import document, Element
         import time
@@ -16,7 +16,7 @@
     
         
 
-        my_string = document.getElementById("searchTxt").value;
+        my_string = prompt()
         word_list = my_string.split(" ")
         
 
