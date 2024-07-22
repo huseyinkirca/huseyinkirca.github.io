@@ -25,9 +25,9 @@
         for i in word_list:
 
             document.getElementById("Word").innerHTML = word_list[num]
-            lenght = word_list[num].lenght
+            lenght = len(word_list)
             num += 1
-            await asyncio.sleep(0.1 * lenght)
+            await asyncio.sleep(0.07 * lenght)
         
             
     
