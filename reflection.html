@@ -20,13 +20,14 @@
         
 
         num = 0
+        lenght = 0
         
         for i in word_list:
 
             document.getElementById("Word").innerHTML = word_list[num]
-            
+            lenght = word_list[num].lenght
             num += 1
-            await asyncio.sleep(0.5)
+            await asyncio.sleep(0.1 * lenght)
         
             
     
